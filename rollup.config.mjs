@@ -2,7 +2,8 @@ import typescript from '@rollup/plugin-typescript';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import dts from 'rollup-plugin-dts';
+import postcss from 'rollup-plugin-postcss';
+import url from 'postcss-url';
 import packageJson from './package.json' with { type: 'json' };
 
 export default [
@@ -27,7 +28,20 @@ export default [
       typescript({ 
         tsconfig: './tsconfig.build.json',
         declaration: false,
-       }),
+      }),
+      postcss({
+        extract: true,
+        minimize: true,
+        sourceMap: true,
+        modules: false,
+        plugins: [
+          url({
+            url: 'inline', // enable inline assets using base64 encoding
+            maxSize: 10, // maximum file size to inline (in kilobytes)
+            fallback: 'copy', // fallback method to use if max size is exceeded
+          }),
+        ],
+      }),
     ],
   },
 ];
