@@ -1,10 +1,26 @@
 :root {
+  --lum-color-white: #fff;
+
+  --lum-color-black: #000;
+  --lum-color-black-alpha-90: rgba(0, 0, 0, 0.9);
+  --lum-color-black-alpha-80: rgba(0, 0, 0, 0.8);
+  --lum-color-black-alpha-70: rgba(0, 0, 0, 0.7);
+  --lum-color-black-alpha-60: rgba(0, 0, 0, 0.6);
+  --lum-color-black-alpha-50: rgba(0, 0, 0, 0.5);
+  --lum-color-black-alpha-40: rgba(0, 0, 0, 0.4);
+  --lum-color-black-alpha-30: rgba(0, 0, 0, 0.3);
+  --lum-color-black-alpha-25: rgba(0, 0, 0, 0.25);
+  --lum-color-black-alpha-20: rgba(0, 0, 0, 0.2);
+  --lum-color-black-alpha-15: rgba(0, 0, 0, 0.15);
+  --lum-color-black-alpha-10: rgba(0, 0, 0, 0.1);
+  --lum-color-black-alpha-5: rgba(0, 0, 0, 0.05);
+
   --lum-color-primary-blue-950: #172554;
   --lum-color-primary-blue-900: #1e3a8a;
   --lum-color-primary-blue-800: #1e40af;
   --lum-color-primary-blue-700: #1d4ed8;
   --lum-color-primary-blue-600: #2563eb;
-  --lum-color-primary-blue-500: #3B82F6;
+  --lum-color-primary-blue-500: #3b82f6;
   --lum-color-primary-blue-400: #60a5fa;
   --lum-color-primary-blue-300: #93c5fd;
   --lum-color-primary-blue-200: #bfdbfe;
@@ -28,7 +44,7 @@
   --lum-color-primary-pink-800: #9d174d;
   --lum-color-primary-pink-700: #be185d;
   --lum-color-primary-pink-600: #db2777;
-  --lum-color-primary-pink-500: #db2777;
+  --lum-color-primary-pink-500: #ec4899;
   --lum-color-primary-pink-400: #f472b6;
   --lum-color-primary-pink-300: #f9a8d4;
   --lum-color-primary-pink-200: #fbcfe8;
@@ -52,7 +68,7 @@
   --lum-color-primary-indigo-800: #3730a3;
   --lum-color-primary-indigo-700: #3730a3;
   --lum-color-primary-indigo-600: #4f46e5;
-  --lum-color-primary-indigo-500: #4f46e5;
+  --lum-color-primary-indigo-500: #6366f1;
   --lum-color-primary-indigo-400: #818cf8;
   --lum-color-primary-indigo-300: #a5b4fc;
   --lum-color-primary-indigo-200: #c7d2fe;
@@ -76,22 +92,22 @@
   --lum-color-primary-emerald-800: #065f46;
   --lum-color-primary-emerald-700: #047857;
   --lum-color-primary-emerald-600: #059669;
-  --lum-color-primary-emerald-500: #059669;
+  --lum-color-primary-emerald-500: #14b8a6;
   --lum-color-primary-emerald-400: #34d399;
   --lum-color-primary-emerald-300: #6ee7b7;
   --lum-color-primary-emerald-200: #a7f3d0;
   --lum-color-primary-emerald-100: #d1fae5;
   --lum-color-primary-emerald-50: #ecfdf5;
-  --lum-color-primary-emerald-alpha-90: rgba(5,150,105, 0.9);
-  --lum-color-primary-emerald-alpha-80: rgba(5,150,105, 0.8);
-  --lum-color-primary-emerald-alpha-70: rgba(5,150,105, 0.7);
-  --lum-color-primary-emerald-alpha-60: rgba(5,150,105, 0.6);
-  --lum-color-primary-emerald-alpha-50: rgba(5,150,105, 0.5);
-  --lum-color-primary-emerald-alpha-40: rgba(5,150,105, 0.4);
-  --lum-color-primary-emerald-alpha-30: rgba(5,150,105, 0.3);
-  --lum-color-primary-emerald-alpha-25: rgba(5,150,105, 0.25);
-  --lum-color-primary-emerald-alpha-20: rgba(5,150,105, 0.2);
-  --lum-color-primary-emerald-alpha-15: rgba(5,150,105, 0.15);
-  --lum-color-primary-emerald-alpha-10: rgba(5,150,105, 0.1);
-  --lum-color-primary-emerald-alpha-5: rgba(5,150,105, 0.05);
+  --lum-color-primary-emerald-alpha-90: rgba(5, 150, 105, 0.9);
+  --lum-color-primary-emerald-alpha-80: rgba(5, 150, 105, 0.8);
+  --lum-color-primary-emerald-alpha-70: rgba(5, 150, 105, 0.7);
+  --lum-color-primary-emerald-alpha-60: rgba(5, 150, 105, 0.6);
+  --lum-color-primary-emerald-alpha-50: rgba(5, 150, 105, 0.5);
+  --lum-color-primary-emerald-alpha-40: rgba(5, 150, 105, 0.4);
+  --lum-color-primary-emerald-alpha-30: rgba(5, 150, 105, 0.3);
+  --lum-color-primary-emerald-alpha-25: rgba(5, 150, 105, 0.25);
+  --lum-color-primary-emerald-alpha-20: rgba(5, 150, 105, 0.2);
+  --lum-color-primary-emerald-alpha-15: rgba(5, 150, 105, 0.15);
+  --lum-color-primary-emerald-alpha-10: rgba(5, 150, 105, 0.1);
+  --lum-color-primary-emerald-alpha-5: rgba(5, 150, 105, 0.05);
 }
