@@ -17,10 +17,14 @@ export type LumButtonProps = {
   rectangle?: boolean;
 
   // colors
-  blue?: true;
-  pink?: true;
-  indigo?: true;
-  emerald?: true;
+  blue?: boolean;
+  pink?: boolean;
+  indigo?: boolean;
+  emerald?: boolean;
+
+  // variants
+  primary?: boolean;
+  secondary?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 function LumButton({
@@ -39,6 +43,9 @@ function LumButton({
   pink,
   indigo,
   emerald,
+
+  primary,
+  secondary,
 
   className,
   children,
@@ -64,6 +71,9 @@ function LumButton({
         pink,
         indigo,
         emerald,
+
+        primary: primary || (!primary && !secondary),
+        secondary,
       })}
       {...rest}
     >

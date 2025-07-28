@@ -111,89 +111,111 @@
     }
   }
 
-  // colors
-  &.blue {
-    background-color: var(--lum-color-primary-blue-600);
-    border-color: var(--lum-color-primary-blue-700);
-
-    &:hover {
-      background-color: var(--lum-color-primary-blue-500);
-      border-color: var(--lum-color-primary-blue-600);
-    }
-    &:active {
-      background-color: var(--lum-color-primary-blue-700);
-      border-color: var(--lum-color-primary-blue-800);
-    }
-    &:focus-visible {
+  // variants
+  &.primary {
+    // colors
+    &.blue {
       background-color: var(--lum-color-primary-blue-600);
-      border-color: var(--lum-color-primary-blue-900);
-    }
-    &:disabled {
-      background-color: var(--lum-color-primary-blue-alpha-20);
-      border: none;
-    }
-  }
-  &.pink {
-    background-color: var(--lum-color-primary-pink-600);
-    border-color: var(--lum-color-primary-pink-700);
+      border-color: var(--lum-color-primary-blue-700);
 
-    &:hover {
-      background-color: var(--lum-color-primary-pink-500);
-      border-color: var(--lum-color-primary-pink-600);
+      &:hover {
+        background-color: var(--lum-color-primary-blue-500);
+        border-color: var(--lum-color-primary-blue-600);
+      }
+      &:active {
+        background-color: var(--lum-color-primary-blue-700);
+        border-color: var(--lum-color-primary-blue-800);
+      }
+      &:focus-visible {
+        background-color: var(--lum-color-primary-blue-600);
+        border-color: var(--lum-color-primary-blue-900);
+      }
+      &:disabled {
+        background-color: var(--lum-color-primary-blue-alpha-20);
+        border: none;
+      }
     }
-    &:active {
-      background-color: var(--lum-color-primary-pink-700);
-      border-color: var(--lum-color-primary-pink-800);
-    }
-    &:focus-visible {
+    &.pink {
       background-color: var(--lum-color-primary-pink-600);
-      border-color: var(--lum-color-primary-pink-900);
-    }
-    &:disabled {
-      background-color: var(--lum-color-primary-pink-alpha-20);
-      border: none;
-    }
-  }
-  &.indigo {
-    background-color: var(--lum-color-primary-indigo-600);
-    border-color: var(--lum-color-primary-indigo-700);
+      border-color: var(--lum-color-primary-pink-700);
 
-    &:hover {
-      background-color: var(--lum-color-primary-indigo-500);
-      border-color: var(--lum-color-primary-indigo-600);
+      &:hover {
+        background-color: var(--lum-color-primary-pink-500);
+        border-color: var(--lum-color-primary-pink-600);
+      }
+      &:active {
+        background-color: var(--lum-color-primary-pink-700);
+        border-color: var(--lum-color-primary-pink-800);
+      }
+      &:focus-visible {
+        background-color: var(--lum-color-primary-pink-600);
+        border-color: var(--lum-color-primary-pink-900);
+      }
+      &:disabled {
+        background-color: var(--lum-color-primary-pink-alpha-20);
+        border: none;
+      }
     }
-    &:active {
-      background-color: var(--lum-color-primary-indigo-700);
-      border-color: var(--lum-color-primary-indigo-800);
-    }
-    &:focus-visible {
+    &.indigo {
       background-color: var(--lum-color-primary-indigo-600);
-      border-color: var(--lum-color-primary-indigo-900);
+      border-color: var(--lum-color-primary-indigo-700);
+
+      &:hover {
+        background-color: var(--lum-color-primary-indigo-500);
+        border-color: var(--lum-color-primary-indigo-600);
+      }
+      &:active {
+        background-color: var(--lum-color-primary-indigo-700);
+        border-color: var(--lum-color-primary-indigo-800);
+      }
+      &:focus-visible {
+        background-color: var(--lum-color-primary-indigo-600);
+        border-color: var(--lum-color-primary-indigo-900);
+      }
+      &:disabled {
+        background-color: var(--lum-color-primary-indigo-alpha-20);
+        border: none;
+      }
     }
-    &:disabled {
-      background-color: var(--lum-color-primary-indigo-alpha-20);
-      border: none;
+    &.emerald {
+      background-color: var(--lum-color-primary-emerald-600);
+      border-color: var(--lum-color-primary-emerald-700);
+
+      &:hover {
+        background-color: var(--lum-color-primary-emerald-500);
+        border-color: var(--lum-color-primary-emerald-600);
+      }
+      &:active {
+        background-color: var(--lum-color-primary-emerald-700);
+        border-color: var(--lum-color-primary-emerald-800);
+      }
+      &:focus-visible {
+        background-color: var(--lum-color-primary-emerald-600);
+        border-color: var(--lum-color-primary-emerald-900);
+      }
+      &:disabled {
+        background-color: var(--lum-color-primary-emerald-alpha-20);
+        border: none;
+      }
     }
   }
-  &.emerald {
-    background-color: var(--lum-color-primary-emerald-600);
-    border-color: var(--lum-color-primary-emerald-700);
+  &.secondary {
+    background-color: var(--lum-color-base-0);
+    border-color: var(--lum-color-base-100);
+    color: var(--lum-color-base-700);
 
     &:hover {
-      background-color: var(--lum-color-primary-emerald-500);
-      border-color: var(--lum-color-primary-emerald-600);
+      background-color: var(--lum-color-base-20);
     }
     &:active {
-      background-color: var(--lum-color-primary-emerald-700);
-      border-color: var(--lum-color-primary-emerald-800);
+      background-color: var(--lum-color-base-40);
     }
     &:focus-visible {
-      background-color: var(--lum-color-primary-emerald-600);
-      border-color: var(--lum-color-primary-emerald-900);
+      border-color: var(--lum-color-primary-blue-500);
     }
     &:disabled {
-      background-color: var(--lum-color-primary-emerald-alpha-20);
-      border: none;
+      background-color: var(--lum-color-base-alpha-5);
+      color: var(--lum-color-base-200);
     }
   }
 }

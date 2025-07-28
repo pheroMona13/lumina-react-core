@@ -182,3 +182,22 @@ export const RectangleDisabled: Story = {
     disabled: true,
   },
 };
+export const SecondaryRoundedLarge: Story = {
+  name: "secondary rounded large",
+  args: {
+    children: "button",
+    rounded: true,
+    large: true,
+    secondary: true,
+  },
+};
+export const SecondaryRoundedLargeDisabled: Story = {
+  name: "secondary rounded large disabled",
+  args: {
+    children: "button",
+    rounded: true,
+    large: true,
+    secondary: true,
+    disabled: true,
+  },
+};
