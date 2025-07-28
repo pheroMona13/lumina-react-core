@@ -1,0 +1,139 @@
+.LumInput {
+  label {
+    .label-text {
+      color: var(--lum-color-base-700);
+      line-height: 20px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    input {
+      background-color: var(--lum-color-base-0);
+      color: var(--lum-color-base-600);
+      border-width: 1px;
+      border-style: solid;
+      border-color: var(--lum-color-base-100);
+      outline: none;
+      font-weight: 600;
+
+      &::placeholder {
+        color: var(--lum-color-base-300);
+      }
+      &:focus {
+        border-color: var(--lum-color-primary-blue-600);
+        box-shadow: var(--lum-shadow-primary-3);
+      }
+      &:disabled {
+        background-color: var(--lum-color-base-20);
+        color: var(--lum-color-base-300);
+        border-color: var(--lum-color-base-100);
+      }
+    }
+  }
+
+  // sizes
+  &.large {
+    label {
+      .label-text {
+        margin-bottom: 16px;
+      }
+
+      input {
+        height: 60px;
+        padding: 20px 32px;
+        line-height: 20px;
+        font-size: 12px;
+      }
+    }
+  }
+  &.medium {
+    label {
+      .label-text {
+        margin-bottom: 12px;
+      }
+
+      input {
+        height: 48px;
+        padding: 14px 24px;
+        line-height: 20px;
+        font-size: 12px;
+      }
+    }
+  }
+  &.small {
+    label {
+      input {
+        height: 40px;
+        padding: 10px 20px;
+        line-height: 20px;
+        font-size: 11px;
+      }
+    }
+  }
+  &.xsmall {
+    label {
+      input {
+        height: 32px;
+        padding: 8px 16px;
+        line-height: 16px;
+        font-size: 10px;
+      }
+    }
+  }
+  &.micro {
+    label {
+      input {
+        height: 24px;
+        padding: 4px 12px;
+        line-height: 16px;
+        font-size: 9px;
+      }
+    }
+  }
+
+  // shapes
+  &.rounded {
+    label {
+      input {
+        border-radius: 32px;
+      }
+    }
+  }
+  &.rectangle {
+    &.large {
+      label {
+        input {
+          border-radius: 16px;
+        }
+      }
+    }
+    &.medium {
+      label {
+        input {
+          border-radius: 12px;
+        }
+      }
+    }
+    &.small {
+      label {
+        input {
+          border-radius: 8px;
+        }
+      }
+    }
+    &.xsmall {
+      label {
+        input {
+          border-radius: 8px;
+        }
+      }
+    }
+    &.micro {
+      label {
+        input {
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
