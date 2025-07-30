@@ -1,0 +1,18 @@
+.LumAlert {
+  background-color: var(--lum-color-base-0);
+  color: var(--lum-color-base-800);
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 4px;
+  border: 1px solid var(--lum-color-base-100);
+  
+
+  & > .text {
+    flex: 1;
+  }
+
+  .close-icon {
+    cursor: pointer;
+  }
+}
