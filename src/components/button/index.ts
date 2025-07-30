@@ -1,1 +1,2 @@
-export { default, type LumButtonProps } from './LumButton';
+export { default } from "./LumButton";
+export type { LumButtonProps } from "./LumButton";

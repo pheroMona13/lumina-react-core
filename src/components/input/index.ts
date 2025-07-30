@@ -1,1 +1,2 @@
-export { default, type LumInputProps } from './LumInput';
+export { default } from "./LumInput";
+export type { LumInputProps } from "./LumInput";

@@ -1,0 +1,58 @@
+.LumAccordionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.LumAccordion {
+  border: 1px solid var(--lum-color-base-100);
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: var(--lum-shadow-primary-1);
+
+  &.open {
+    .head {
+      .toggle-icon {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .content {
+      padding: 0 12px 8px;
+      max-height: 300px;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  .head {
+    background-color: var(--lum-color-base-0);
+    color: var(--lum-color-base-800);
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 12px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+    .toggle-icon {
+      transition: all 0.2s ease;
+    }
+
+    & > .text {
+      flex: 1;
+    }
+  }
+
+  .content {
+    color: var(--lum-color-base-500);
+    padding: 0 12px 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+}

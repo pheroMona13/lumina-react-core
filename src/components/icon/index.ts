@@ -1,1 +1,2 @@
-export { default, type LumIconProps } from './LumIcon';
+export { default } from "./LumIcon";
+export type { LumIconProps } from "./LumIcon";
