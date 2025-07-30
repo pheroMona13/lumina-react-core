@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import url from 'postcss-url';
+import svgr from '@svgr/rollup'
 import packageJson from './package.json' with { type: 'json' };
 
 export default [
@@ -34,6 +35,7 @@ export default [
         minimize: true,
         sourceMap: true,
         modules: false,
+        to: 'dist/index.css',
         plugins: [
           url({
             url: 'inline', // enable inline assets using base64 encoding
@@ -42,6 +44,23 @@ export default [
           }),
         ],
       }),
+      svgr({
+        icon: true,           // sets width/height to "1em"
+        svgoConfig: {         // tweak SVGO options as needed
+          plugins: [
+            {
+              name: 'removeViewBox',
+              active: false,
+            },
+            {
+              name: 'removeAttrs',
+              params: {
+                attrs: '(fill)',
+              },
+            },
+          ]
+        }
+      })
     ],
   },
 ];
