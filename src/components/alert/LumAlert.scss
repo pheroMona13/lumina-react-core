@@ -1,18 +1,45 @@
 .LumAlert {
-  background-color: var(--lum-color-base-0);
-  color: var(--lum-color-base-800);
   display: flex;
   align-items: flex-start;
+  gap: 8px;
   width: 100%;
   padding: 4px;
-  border: 1px solid var(--lum-color-base-100);
-  
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
 
   & > .text {
     flex: 1;
+    line-height: 24px;
+    font-size: 10px;
+    font-weight: 600;
   }
 
   .close-icon {
     cursor: pointer;
+  }
+
+  // colors
+  &.default {
+    background-color: var(--lum-color-base-0);
+    color: var(--lum-color-base-800);
+    border-color: var(--lum-color-base-100);
+
+    &:focus {
+      background-color: var(--lum-color-base-900);
+      color: var(--lum-color-base-100);
+      border-color: var(--lum-color-base-800);
+    }
+  }
+  &.primary {
+    background-color: var(--lum-color-primary-blue-50);
+    color: var(--lum-color-primary-blue-700);
+    border-color: var(--lum-color-primary-blue-alpha-50);
+
+    &:focus {
+      background-color: var(--lum-color-primary-blue-600);
+      color: var(--lum-color-base-50);
+      border-color: var(--lum-color-primary-blue-500);
+    }
   }
 }
